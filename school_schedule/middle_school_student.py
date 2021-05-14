@@ -1,6 +1,7 @@
 from .student import Student
+from .teacher import Teacher
 
-class MiddleSchoolStudent(Student):
+class MiddleSchoolStudent(Student,Teacher):
     def __init__(self,name,grade,classes,transportation):
         # self.name = name
         # self.grade = grade
@@ -10,6 +11,6 @@ class MiddleSchoolStudent(Student):
     
     def summary(self):
         if self.transportation == True:
-            return f"{super().summary()} Eligble for transportation"
+            return f"{super().summary()} Eligible for transportation!"
         else:
-            return f"{super().summary()} Not Eligble for transportation"
+            return f"{super().summary()} NOT eligible for transportation!"
