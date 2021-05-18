@@ -34,8 +34,8 @@ claire = MiddleSchoolStudent(
             )
 
 # print(claire.get_num_classes())
-print(claire.summary())
-print(MiddleSchoolStudent.mro())
+# print(claire.summary())
+# print(MiddleSchoolStudent.mro())
 
 # Extra:
 # - create a function that will return the student with more classes

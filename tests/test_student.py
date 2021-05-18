@@ -8,7 +8,8 @@ def test_new_valid_student():
 
     # Act
     ellis = Student(name, grade, classes)
-
+    
+    #Assert
     assert ellis.name == name
     assert ellis.grade == grade
     assert ellis.classes == classes
