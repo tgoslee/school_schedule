@@ -1,5 +1,6 @@
 from school_schedule.student import Student
 from school_schedule.middle_school_student import MiddleSchoolStudent
+from school_schedule.cohort import Cohort
 
 # first instance
 quinn = Student(
@@ -33,10 +34,9 @@ claire = MiddleSchoolStudent(
                 True
             )
 
-# print(claire.get_num_classes())
-# print(claire.summary())
-# print(MiddleSchoolStudent.mro())
+student_list = [quinn, claire]
+c1 = Cohort("Cohort 1", student_list)
+print(c1)
 
-# Extra:
-# - create a function that will return the student with more classes
-# - create a test for that function
+print(c1.class_list("World History"))
+print(c1.student_summaries())
